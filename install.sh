@@ -14,15 +14,15 @@ cd ~
 sudo cp -f ~/Hypr/pacman.conf /etc/
 sudo cp -f ~/Hypr/nanorc /etc/
 
-# === Step 2: Install paru (AUR helper) ===
+# === Step 2: Install essential packages with pacman ===
+sudo pacman -S --noconfirm "${PACMAN_PACKAGES[@]}"
+
+# === Step 3: Install paru (AUR helper) and essential packeges ===
 git clone https://aur.archlinux.org/paru.git
 cd paru/
 makepkg -si --noconfirm
 cd ~
 sudo rm -rf paru/
-
-# === Step 3: Install essential packages with pacman ===
-sudo pacman -S --noconfirm "${PACMAN_PACKAGES[@]}"
 
 # === Step 4: Install essential packages with paru ===
 paru -S --noconfirm "${PARU_PACKAGES[@]}"
@@ -42,4 +42,4 @@ gsettings set org.gnome.desktop.interface font-name 'SourceCodePro 11'
 # === Step 7: Final cleanup ===
 sudo pacman -Rns $(pacman -Qdtq) --noconfirm
 sudo pacman -Scc --noconfirm
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" & sudo cp -f ~/Hypr/.bashrc ~ & echo "Reboot your system!" & sudo rm -rf ~/Hypr/
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" & sudo cp -r ~/Hypr/.bashrc ~ & echo "Reboot your system!" & sudo rm -rf ~/Hypr/ & reboot
