@@ -11,6 +11,7 @@ PARU_PACKAGES=(
 
 # === Step 1: Update pacman.conf ===
 echo "Updating pacman.conf..."
+cd ~
 sudo cp -f ~/Hypr/pacman.conf /etc/
 sudo cp -f ~/Hypr/nanorc /etc/
 
@@ -20,7 +21,7 @@ git clone https://aur.archlinux.org/paru.git
 cd paru/
 makepkg -si --noconfirm
 cd ~
-rm -rf paru/
+sudo rm -rf paru/
 
 
 # === Step 3: Install essential packages with pacman ===
@@ -43,14 +44,11 @@ sudo systemctl enable ly.service
 sudo systemctl disable getty@tty2.service
 
 # === Step 7: Clone and copy dotfiles ===
-sudo cp -r ~/Dotfiles-for-hyprland/.config ~
+sudo cp -r ~/Hypr/.config ~
 
 # === Step 8: Final cleanup ===
 echo "Cleaning up unnecessary files..."
 sudo pacman -Rns $(pacman -Qdtq) --noconfirm
 sudo pacman -Scc --noconfirm
-rm -rf ~/Hyprland/
-
-# === Step 9: Reboot system ===
-echo "Rebooting the system"
-sudo reboot
+echo "Reboot your system!"
+sudo rm -rf ~/Hypr/
