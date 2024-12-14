@@ -1,0 +1,136 @@
+{
+  "yags-general": {
+    "img": "https://e4p7c9i3.stackpathcdn.com/wp-content/uploads/2019/05/tumblr_p320aq1osj1vjxiz1o1_1280.gif?iv=344",
+    "title": "Gruvbox is the best Box",
+    "displayImg": false,
+    "font": "",
+    "enableFonts": true,
+    "fontSize": 1.8
+  },
+  "yags-search": {
+    "placeholder": "Search the web",
+    "engine": "google",
+    "forwardingLookup": {
+      "maps": "https://maps.google.com/"
+    }
+  },
+  "yags-theme": {
+    "inverted": false,
+    "color": {
+      "name": "custom",
+      "bg": {
+        "shade": "#202020",
+        "base": "#282828",
+        "surface": "#32302f",
+        "highlight": "#504945"
+      },
+      "fg": {
+        "shade": "#d4be98",
+        "base": "#504945",
+        "surface": "#d4be98",
+        "highlight": "#FFFFFF"
+      },
+      "primary": {
+        "bg": "#141617",
+        "base": "#282828",
+        "fg": "#89b482"
+      },
+      "secondary": {
+        "bg": "#1d2021",
+        "base": "#d4be98",
+        "fg": "#d4be98"
+      },
+      "palette": {
+        "red": "#E06C75",
+        "green": "#98C379",
+        "yellow": "#E5C07B",
+        "blue": "#61AFEF",
+        "purple": "#C678DD",
+        "cyan": "#56B6C2",
+        "orange": "#FFBB7C"
+      }
+    },
+    "space": {
+      "smallest": "0.125rem",
+      "small": "0.5rem",
+      "medium": "1rem",
+      "large": "1.5rem",
+      "largest": "3rem"
+    }
+  },
+  "yags-surface": {
+    "shadow": {
+      "amount": 2,
+      "blur": 3,
+      "offset": 2,
+      "shadow": "2px 2px 3px rgb(20, 22, 23), 4px 4px 3px rgb(29, 32, 33)"
+    },
+    "borderRadius": 13,
+    "maxWidth": 1000
+  },
+  "yags-bookmarks": [
+    {
+      "id": "YGAzIphu2kUYIsOz",
+      "label": "Video",
+      "bookmarks": [
+        {
+          "id": "B9z9HRVmTCloXLQ4",
+          "label": "YouTube",
+          "url": "https://www.youtube.com/"
+        },
+        {
+          "id": "eUK0RLKvo6VrkOxY",
+          "label": "Netflix",
+          "url": "https://www.netflix.com/"
+        },
+        {
+          "id": "qCXA4oFiBYaTMvvL",
+          "label": "Max",
+          "url": "https://www.max.com/"
+        }
+      ]
+    },
+    {
+      "id": "OOO6pe8n5373G8rS",
+      "label": "Social",
+      "bookmarks": [
+        {
+          "id": "lzR2kRTR2yD3jQ5D",
+          "label": "Reddit",
+          "url": "https://www.reddit.com/"
+        },
+        {
+          "id": "b9aLToWr35adTFKM",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/accounts/onetap/?next=%2F"
+        },
+        {
+          "id": "gx4pQSrgvyUuJzcV",
+          "label": "Twitch",
+          "url": "https://www.twitch.tv/"
+        }
+      ]
+    },
+    {
+      "id": "IZaiq8gJNHZQsxmN",
+      "label": "Other",
+      "bookmarks": [
+        {
+          "id": "dQBrEjJCkCRw2gqW",
+          "label": "GMail",
+          "url": "https://mail.google.com/mail/u/0/#inbox"
+        },
+        {
+          "id": "Tw2a1gXuGzgzlM5X",
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com/"
+        },
+        {
+          "id": "XFGxYdP5j1PNFLKh",
+          "label": "Factorio",
+          "url": "https://factorio.com/"
+        }
+      ]
+    }
+  ]
+}
