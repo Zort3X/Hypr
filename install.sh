@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PACMAN_PACKAGES=(
-  "alacritty" "base-devel" "btop" "file-roller" "hyprland" "hyprpaper" "ly" "nano" "neofetch" "nvidia" "pulsemixer" "steam" "thunar" "waybar" "wofi"
+  "alacritty" "base-devel" "btop" "file-roller" "hyprland" "hyprpaper" "ly" "nano" "neofetch" "nvidia" "pulsemixer" "steam" "thunar" "waybar" "rofi-wayland"
 )
 
 PARU_PACKAGES=(
