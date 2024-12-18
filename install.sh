@@ -1,11 +1,11 @@
 #!/bin/bash
 
 PACMAN_PACKAGES=(
-  "alacritty" "base-devel" "btop" "file-roller" "hyprland" "hyprpaper" "ly" "nano" "neofetch" "nvidia" "pulsemixer" "steam" "thunar" "waybar" "rofi-wayland"
+  "alacritty" "base-devel" "btop" "file-roller" "hyprland" "hyprpaper" "ly" "nano" "neofetch" "nvidia" "pulsemixer" "steam" "thunar" "waybar" "rofi-wayland" "plymouth"
 )
 
 PARU_PACKAGES=(
-  "bibata-cursor-theme-bin" "google-chrome" "gruvbox-gtk-theme-git" "gruvbox-icon-theme-git" "hyprshot" "spicetify-cli" "spotify" "vesktop-bin" "plymouth" "plymouth-theme-loader-2-git"
+  "bibata-cursor-theme-bin" "google-chrome" "gruvbox-gtk-theme-git" "gruvbox-icon-theme-git" "hyprshot" "spicetify-cli" "spotify" "vesktop-bin" "plymouth-theme-loader-2-git"
 )
 
 
@@ -15,7 +15,7 @@ sudo cp -f ~/Hypr/pacman.conf /etc/
 sudo cp -f ~/Hypr/nanorc /etc/
 
 # === Step 2: Install essential packages with pacman ===
-sudo pacman -S --noconfirm "${PACMAN_PACKAGES[@]}"
+sudo pacman -Sy --noconfirm "${PACMAN_PACKAGES[@]}"
 
 # === Step 3: Install paru (AUR helper) and essential packeges ===
 git clone https://aur.archlinux.org/paru.git
@@ -25,7 +25,7 @@ cd ~
 sudo rm -rf paru/
 
 # === Step 4: Install essential packages with paru ===
-paru -S --noconfirm "${PARU_PACKAGES[@]}"
+paru -Sy --noconfirm "${PARU_PACKAGES[@]}"
 
 # === Step 5: Enable and disable systemd services ===
 sudo systemctl enable pipewire.service
