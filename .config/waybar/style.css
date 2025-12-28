@@ -1,0 +1,21 @@
+/* Minimal Waybar CSS using GTK theme colors */
+
+/* Focused workspace highlight */
+.hyprland-workspaces .focused {
+    background-color: #a3be51; /* green highlight */
+    border-radius: 5px;
+    padding: 0 8px;
+}
+
+/* Other workspaces */
+.hyprland-workspaces .occupied,
+.hyprland-workspaces .empty,
+.hyprland-workspaces .urgent {
+    padding: 0 8px;
+}
+
+/* Hover effect for modules */
+.module:hover {
+    background-color: rgba(255,255,255,0.05); /* subtle hover */
+    border-radius: 3px;
+}

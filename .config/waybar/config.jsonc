@@ -1,0 +1,89 @@
+{
+  /* ────────────────────────────────────────
+   *  Bar Layout
+   * ────────────────────────────────────────
+   *   left   : workspaces
+   *   center : window (title)
+   *   right  : clock, volume, mic, network, lang, date
+   */
+
+  "layer": "top",
+  "position": "top",
+  "width": "100%",
+
+  "modules-left": [
+    "hyprland/workspaces"   // or "i3/workspaces" if you’re on i3
+  ],
+
+  "modules-center": [
+    "hyprland/window"   // or "i3/window"
+  ],
+
+  "modules-right": [
+    "clock",
+    "volume",
+    "mic",
+    "network",
+    "lang",
+    "date"
+  ],
+
+  /* ────────────────────────────────────────
+   *  Individual module config
+   * ────────────────────────────────────────
+   */
+
+  "clock": {
+    "format": "%a %d %b %Y %R",
+    "tooltip": false
+  },
+
+  "volume": {
+    "format": "{icon} {volume}%",
+    "format-icons": {
+      "default": "",
+      "muted": ""
+    },
+    "tooltip": true
+  },
+
+  "mic": {
+    "format": "{icon} {volume}%",
+    "format-icons": {
+      "default": "",
+      "muted": ""
+    },
+    "tooltip": true,
+    "sink": "pulse"          // the sink to monitor
+  },
+
+  "network": {
+    "format": "{ifname} {ipaddr}",
+    "format-disconnected": "爵 disconnected",
+    "format-ethernet": "{ifname} {ipaddr}",
+    "format-wifi": "{essid} {signalStrength}%",
+    "tooltip": true
+  },
+
+  "lang": {
+    /* We’ll use a tiny script that outputs the current language */
+    "format": "{output}",
+    "exec": "~/.config/waybar/scripts/lang.sh",
+    "interval": 60
+  },
+
+  "date": {
+    "format": "%d %b %Y",
+    "tooltip": false
+  },
+
+  /* ────────────────────────────────────────
+   *  Common settings (for all modules)
+   * ────────────────────────────────────────
+   */
+
+  "spacing": 8,
+  "margin": 4,
+  "animation": "slide",
+  "animation-duration": 200
+}

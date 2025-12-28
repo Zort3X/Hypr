@@ -1,0 +1,17 @@
+# Font
+font=ProFontIIxNerdFont 14
+
+# Colors (matching your Alacritty scheme)
+background-color=#17191a
+text-color=#ebdbb2
+border-color=#A7C080ee
+border-size=2
+border-radius=6
+
+# Timing
+default-timeout=4000
+
+# Positioning
+anchor=top-right
+margin=10
+padding=8

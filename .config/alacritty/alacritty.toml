@@ -18,20 +18,12 @@ key = "V"
 mods = "Control|Shift"
 
 [font.normal]
-family = "SourceCodePro"
+family = "ProFontIIxNerdFont"
 style = "Regular"
 
 [font.bold]
-family = "SourceCodePro"
+family = "ProFontIIxNerdFont"
 style = "Bold"
-
-[font.italic]
-family = "SourceCodePro"
-style = "it"
-
-[font.bold_italic]
-family = "SourceCodePro"
-style = "Boldit"
 
 [colors.selection]
 background = "0x003300"

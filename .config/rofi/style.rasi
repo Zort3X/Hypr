@@ -11,10 +11,10 @@
 configuration {
 	modi:                       "drun,run,window";
     show-icons:                 false;
-    display-drun:               "";
-    display-run:                "";
-    display-filebrowser:        "";
-    display-window:             "";
+    display-drun:               " ";
+    display-run:                " ";
+    display-filebrowser:        " ";
+    display-window:             " ";
 	drun-display-format:        "{name}";
 	window-format:              "{w} · {c} · {t}";
 }
@@ -58,6 +58,7 @@ window {
     width:                       400px;
     x-offset:                    0px;
     y-offset:                    0px;
+    font: "SauceCodeProNerdFont 12";
 
     /* properties for all widgets */
     enabled:                     true;
